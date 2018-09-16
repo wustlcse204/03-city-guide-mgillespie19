@@ -2,27 +2,110 @@
 
 <html>
 
+    <!--  webpage basics: title, meta info  -->
     <head>
         <title> Max Gillespie's Pittsburgh Hitlist </title>
+
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="Max Gillespie">
+        <meta name="keywords"
+                      content="Pittsburgh,Randyland,PNC Park, Strip District">
+        <meta name="description"
+                content="A list of the top 5 places to visit in Pittsburgh!">
     </head>
 
     <body>
-        <h1> Max Gillespie's Pittsburgh Hitlist </h1>
-        <p>
-            Hi! Welcome to my website about the best places to visit in
-            Pittsburgh. It's great to have you here! This is a non-comprehensive
-            of things that I (a bonafide Pittsburgh native) recommend doing,
-            and try to do as often as possible!
-        </p>
+        <!--  Article heading & Mission Statement  -->
+        <div id="article_heading">
+            <h1> Max Gillespie's Pittsburgh Hitlist </h1>
+        </div>
 
-        <!--  TOP 5 PLACES IN PITTSBURGH  -->
-        <ol>
-            <li> The Strip District </li>
-            <li> Mount Washington </li>
-            <li> PNC Park </li>
-            <li> Lawrenceville </li>
-            <li> Randyland </li>
-        </ol>
+        <nav id="main_menu">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="strip_district.html">Strip District</a></li>
+                <li><a href="mt_washington.html">Mount Washington</a></li>
+                <li><a href="pnc_park.html">PNC Park</a></li>
+                <li><a href="lawrenceville.html">Lawrenceville</a></li>
+                <li><a href="randyland.html">Randyland</a></li>
+            </ul>
+        </nav>
+
+        <div id="mission_statement">
+            <p>
+                Hi! Welcome to my website about the best places to visit in
+                Pittsburgh. It's great to have you here! This is a non-comprehensive
+                of things that I (a bonafide Pittsburgh native) recommend doing,
+                and try to do as often as possible!
+            </p>
+        </div>
+
+        <!--  TOP 5 PLACES IN PITTSBURGH LIST  -->
+        <!--
+        <div id="top5_list" class="list">
+            <ol>
+                <div id="strip_district" class="location">
+                    <li> The Strip District </li>
+                    <p>
+
+
+                    </p>
+                </div>
+                <div id="mt_washington" class="location">
+                    <li> Mount Washington </li>
+                    <p>
+
+
+                    </p>
+                </div>
+                <div id="pnc_park" class="location">
+                    <li> PNC Park </li>
+                    <p>
+
+
+                    </p>
+                </div>
+                <div id="lawrenceville" class="location">
+                    <li> Lawrenceville </li>
+                    <p>
+
+                    </p>
+                    <div id="map" style="width:550px;height:400px">
+                        <script>
+                        function lawrenceville() {
+                            var mapOptions = {
+                                mapTypeId: google.maps.MapTypeId.MAP,
+                                center: new google.maps.LatLng(40.478,-79.955),
+                                zoom: 14
+                            }
+                        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                        }
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?callback=lawrenceville">
+                        </script>
+                    </div>
+
+                </div>
+                <div id="randyland" class="location">
+                    <li> Randyland </li>
+                    <p>
+
+
+                    </p>
+
+                </div>
+            </ol>
+        </div>
+      -->
+
+        <!--  JOIN EMAIL LIST FORM  -->
+        <div id="join_email_list" class="email_list">
+            <form method="post">
+                <input type="email">
+                    Join our email list and learn more about Pittsburgh!
+                </input>
+            </form>
+        </div>
     </body>
-
 </html>
