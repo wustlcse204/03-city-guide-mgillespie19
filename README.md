@@ -8,7 +8,7 @@ Do not worry about the style and appearance of your site as much- focus on conte
 
 ## Assignment Objectives
 
-1. Look at the `index.html` file i've created for you and add something that every HTML file needs to have at the very beginning of the file.
+
 2. Follow the writing guidelines we learned in class to write clear, useful, and friendly content. You will be graded on the quality of your content!
     * Be sure to include a mission statement or introduction text on your page explaining the purpose of your website.
     * Write helpful descriptions of the places you are highlighting.
