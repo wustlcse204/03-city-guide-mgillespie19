@@ -32,48 +32,128 @@
             </ul>
         </nav>
 
-        <div id="mission_statement">
+        <div id="website_welcome">
             <p>
                 Hi! Welcome to my website about the best places to visit in
-                Pittsburgh. It's great to have you here! This is a non-comprehensive
-                of things that I (a bonafide Pittsburgh native) recommend doing,
-                and try to do as often as possible!
+                Pittsburgh. It's great to have you here! I’m a lifelong Pittsburgh
+                resident, and am fiercely in love with the city.
+            </p>
+            <p>
+                While many people have heard of Pittsburgh, not many have been,
+                and I think that’s a shame. While it’s not the largest city, it’s
+                a charming mix of small-town and big city, the perfect pit stop on
+                a road trip as you move from midwest into northeast or vice versa.
+            </p>
+            <p>
+              I’ve spent countless hours exploring the city, and this is a my
+              must-hit list: a non-comprehensive list of things that love to do
+              while I’m home, and try to do as often as possible. Enjoy!
             </p>
         </div>
 
-        <!--  TOP 5 PLACES IN PITTSBURGH LIST  -->
-        <!--
-        <div id="top5_list" class="list">
-            <ol>
-                <div id="mt_washington" class="location">
-                    <li> Mount Washington </li>
-                    <p>
-
-
-                    </p>
-                </div>
-                <div id="pnc_park" class="location">
-                    <li> PNC Park </li>
-                    <p>
-
-
-                    </p>
-                </div>
-
-                </div>
-                <div id="randyland" class="location">
-                    <li> Randyland </li>
-                    <p>
-
-
-                    </p>
-
-                </div>
-            </ol>
+        <div id="strip_district_heading" class="title">
+            <h2> The Strip District </h2>
         </div>
-      -->
+
+        <div id="strip_district_body" class="destination">
+            <p id="strip_p1">
+                No matter the time of week or year, the strip district is a
+                must-hit during your visit to Pittsburgh.
+            </p>
+            <p id="strip_p2">
+                The Strip District is one of the culinary capitals of Pittsburgh,
+                with a mix of cuisine largely inspired from the city’s strong
+                Polish and Italian roots.
+            </p>
+            <p id="strip_p3">
+              The strip district would be the place to start your Pittsburgh
+              visit off right with a pancake from Pamela’s pancakes, or maybe
+              you’re the type that skips breakfast and goes right for the
+              throat–I don’t judge. If that sounds more your speed, you could go
+              a few blocks down from Pamela’s to Primanti Bros Sandwiches, where
+              you can get a truly one-of-a-kind sandwich piled high with fries
+              and coleslaw.
+            </p>
+
+        </div>
+
+        <div id="mt_washington_heading" class="title">
+            <h2> Mount Washington </h2>
+        </div>
+
+        <div id="mt_washington_body" class="destination">
+            <p>
+                Mount Washington is one of the stops on this list that makes
+                Pittsburgh truly unlike any other city.
+            </p>
+            <p>
+                The city center itself is built at the intersection of 3 rivers,
+                referred to locals as “the point”, and right across one of those
+                rivers [the Monongahela River, if you were wondering] is a
+                quarter-mile tall riverbank, carved by millennia of the 3 rivers
+                flowing. At the top of this pseudo-riverbank, pseudo-mountain is
+                Mount Washington.
+            </p>
+            <p>
+              There are a variety of things to do at Mount Washington,
+              including riding an incline up the bank, and a multitude of
+              different restaurants and ice cream shops, but the main attraction
+              is unequivocally the view yielded from one of the several viewing
+              decks. I didn’t really fall in love with Pittsburgh until the
+              first time I went to the top of Mount Washington in the late
+              afternoon with a friend, set up a hammock, and watched the sunset
+              over the city as golden hour slipped into dusk, which slipped into
+              evening.
+            </p>
+        </div>
+
+        <div id="lawrenceville_heading" class="title">
+          <h2> Lawrenceville </h2>
+        </div>
+
+        <div id="lawrenceville_body" class="destination">
+            <p>
+                Sample text
+            </p>
+            <div id="map" style="width:550px;height:400px">
+                <script>
+                function lawrenceville() {
+                    var mapOptions = {
+                        mapTypeId: google.maps.MapTypeId.MAP,
+                        center: new google.maps.LatLng(40.478,-79.955),
+                        zoom: 14
+                    }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?callback=lawrenceville">
+                </script>
+            </div>
+        </div>
+
+        <div id="pnc_park_heading" class="title">
+            <h2> PNC Park </h2>
+        </div>
+
+        <div id="pnc_park" class="destination">
+            <p>
+                Sample text
+            </p>
+        </div>
+
+        <div id="randyland_heading" class="title">
+            <h2> Randyland </h2>
+        </div>
+
+        <div id="randyland_body" class="destination">
+            <p>
+                Sample text
+            </p>
+        </div>
+
 
         <!--  JOIN EMAIL LIST FORM  -->
+        <hr>
         <div id="join_email_list" class="email_list">
             <form method="post">
                 <input type="email">
