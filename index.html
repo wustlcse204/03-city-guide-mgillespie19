@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 
+<!--
+html
+  table
+  IMAGES [Height, width, image size correct]
+    Mount washington
+    lawrenceville
+    pnc park
+
+css
+Make some text on your page either italic, underlined, or all caps using CSS by targeting an ID or CLASS.
+Add some line height to the paragraphs on your page
+Change the alignment of some text- left, right, or justify.
+Change the background color of your form text inputs when they are in focus (i.e. when the user is typing a value)
+-->
+
 <html>
 
     <!--  webpage basics: title, meta info  -->
@@ -16,141 +31,208 @@
     </head>
 
     <body>
+        <!-- MAIN MENU -->
+        <nav id="main_menu">
+            <li><a href="index.html">About</a></li>
+            <li><a href="#strip_district">Strip District</a></li>
+            <li><a href="#mt_washington">Mount Washington</a></li>
+            <li><a href="#lawrenceville">Lawrenceville</a></li>
+            <li><a href="#pnc_park">PNC Park</a></li>
+            <li><a href="#randyland">Randyland</a></li>
+        </nav>
+
         <!--  Article heading & Mission Statement  -->
         <div id="article_heading">
             <h1> Max Gillespie's Pittsburgh Hitlist </h1>
         </div>
-
-        <nav id="main_menu">
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="strip_district.html">Strip District</a></li>
-                <li><a href="mt_washington.html">Mount Washington</a></li>
-                <li><a href="pnc_park.html">PNC Park</a></li>
-                <li><a href="lawrenceville.html">Lawrenceville</a></li>
-                <li><a href="randyland.html">Randyland</a></li>
-            </ul>
-        </nav>
-
-        <div id="website_welcome">
-            <p>
-                Hi! Welcome to my website about the best places to visit in
-                Pittsburgh. It's great to have you here! I’m a lifelong Pittsburgh
-                resident, and am fiercely in love with the city.
-            </p>
-            <p>
-                While many people have heard of Pittsburgh, not many have been,
-                and I think that’s a shame. While it’s not the largest city, it’s
-                a charming mix of small-town and big city, the perfect pit stop on
-                a road trip as you move from midwest into northeast or vice versa.
-            </p>
-            <p>
-              I’ve spent countless hours exploring the city, and this is a my
-              must-hit list: a non-comprehensive list of things that love to do
-              while I’m home, and try to do as often as possible. Enjoy!
-            </p>
+        <div id="website_welcome" class="container">
+            <div id="welcome-text">
+                <p id="welcome_line1">
+                    Hi! Welcome to my website about the best places to visit in
+                    Pittsburgh. It's great to have you here! I’m a lifelong Pittsburgh
+                    resident, and am fiercely in love with the city.
+                </p>
+                <p>
+                    While many people have heard of Pittsburgh, not many have been,
+                    and I think that’s a shame. While it’s not the largest city, it’s
+                    a charming mix of small-town and big city, the perfect pit stop on
+                    a road trip as you move from midwest into northeast or vice versa.
+                </p>
+                <p>
+                  I’ve spent countless hours exploring the city, and this is a my
+                  must-hit list: a non-comprehensive list of things that love to do
+                  while I’m home, and try to do as often as possible. Enjoy!
+                </p>
+            </div>
+            <img id="welcomeImage" src="PGH-Bridge.png" alt = "Welcome Background" class="image">
         </div>
 
-        <div id="strip_district_heading" class="title">
-            <h2> The Strip District </h2>
-        </div>
-
-        <div id="strip_district_body" class="destination">
-            <p id="strip_p1">
-                No matter the time of week or year, the strip district is a
-                must-hit during your visit to Pittsburgh.
-            </p>
-            <p id="strip_p2">
-                The Strip District is one of the culinary capitals of Pittsburgh,
-                with a mix of cuisine largely inspired from the city’s strong
-                Polish and Italian roots.
-            </p>
-            <p id="strip_p3">
-              The strip district would be the place to start your Pittsburgh
-              visit off right with a pancake from Pamela’s pancakes, or maybe
-              you’re the type that skips breakfast and goes right for the
-              throat–I don’t judge. If that sounds more your speed, you could go
-              a few blocks down from Pamela’s to Primanti Bros Sandwiches, where
-              you can get a truly one-of-a-kind sandwich piled high with fries
-              and coleslaw.
-            </p>
-
-        </div>
-
-        <div id="mt_washington_heading" class="title">
-            <h2> Mount Washington </h2>
-        </div>
-
-        <div id="mt_washington_body" class="destination">
-            <p>
-                Mount Washington is one of the stops on this list that makes
-                Pittsburgh truly unlike any other city.
-            </p>
-            <p>
-                The city center itself is built at the intersection of 3 rivers,
-                referred to locals as “the point”, and right across one of those
-                rivers [the Monongahela River, if you were wondering] is a
-                quarter-mile tall riverbank, carved by millennia of the 3 rivers
-                flowing. At the top of this pseudo-riverbank, pseudo-mountain is
-                Mount Washington.
-            </p>
-            <p>
-              There are a variety of things to do at Mount Washington,
-              including riding an incline up the bank, and a multitude of
-              different restaurants and ice cream shops, but the main attraction
-              is unequivocally the view yielded from one of the several viewing
-              decks. I didn’t really fall in love with Pittsburgh until the
-              first time I went to the top of Mount Washington in the late
-              afternoon with a friend, set up a hammock, and watched the sunset
-              over the city as golden hour slipped into dusk, which slipped into
-              evening.
-            </p>
-        </div>
-
-        <div id="lawrenceville_heading" class="title">
-          <h2> Lawrenceville </h2>
-        </div>
-
-        <div id="lawrenceville_body" class="destination">
-            <p>
-                Sample text
-            </p>
-            <div id="map" style="width:550px;height:400px">
-                <script>
-                function lawrenceville() {
-                    var mapOptions = {
-                        mapTypeId: google.maps.MapTypeId.MAP,
-                        center: new google.maps.LatLng(40.478,-79.955),
-                        zoom: 14
-                    }
-                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-                }
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?callback=lawrenceville">
-                </script>
+        <!-- LOCATIONS -->
+        <div id="strip_district">
+            <div id="strip_district_heading" class="title">
+                <h2> The Strip District </h2>
+            </div>
+            <div id="strip_district_body" class="destination">
+                <p id="strip_p1">
+                    No matter the time of week or year, the strip district is a
+                    must-hit during your visit to Pittsburgh.
+                </p>
+                <p id="strip_p2">
+                    The Strip District is one of the culinary capitals of Pittsburgh,
+                    with a mix of cuisine largely inspired from the city’s strong
+                    Polish and Italian roots.
+                </p>
+                <p id="strip_p3">
+                  The strip district would be the place to start your Pittsburgh
+                  visit off right with a pancake from Pamela’s pancakes, or maybe
+                  you’re the type that skips breakfast and goes right for the
+                  throat–I don’t judge. If that sounds more your speed, you could go
+                  a few blocks down from Pamela’s to Primanti Bros Sandwiches, where
+                  you can get a truly one-of-a-kind sandwich piled high with fries
+                  and coleslaw.
+                </p>
+                <img src="primanti.png" alt="Primanti's Sandwich" class="image">
+                <img src="pamelas.jpg" alt="Pamela's Pancakes" class="image">
             </div>
         </div>
-
-        <div id="pnc_park_heading" class="title">
-            <h2> PNC Park </h2>
+        <div id="mt_washington">
+            <div id="mt_washington_heading" class="title">
+                <h2> Mount Washington </h2>
+            </div>
+            <div id="mt_washington_body" class="destination">
+                <p>
+                    Mount Washington is one of the stops on this list that makes
+                    Pittsburgh truly unlike any other city.
+                </p>
+                <p>
+                    The city center itself is built at the intersection of 3 rivers,
+                    referred to locals as “the point”, and right across one of those
+                    rivers [the Monongahela River, if you were wondering] is a
+                    quarter-mile tall riverbank, carved by millennia of the 3 rivers
+                    flowing. At the top of this pseudo-riverbank, pseudo-mountain is
+                    Mount Washington.
+                </p>
+                <p>
+                  There are a variety of things to do at Mount Washington,
+                  including riding an incline up the bank, and a multitude of
+                  different restaurants and ice cream shops, but the main attraction
+                  is unequivocally the view yielded from one of the several viewing
+                  decks. I didn’t really fall in love with Pittsburgh until the
+                  first time I went to the top of Mount Washington in the late
+                  afternoon with a friend, set up a hammock, and watched the sunset
+                  over the city as golden hour slipped into dusk, which slipped into
+                  evening.
+                </p>
+            </div>
         </div>
+        <div id="lawrenceville">
+            <div id="lawrenceville_heading" class="title">
+              <h2> Lawrenceville </h2>
+            </div>
+            <div id="lawrenceville_body" class="destination">
+                <p>
+                    Think of Lawrenceville like a younger Strip District–this is
+                    a really interesting area, another culinary hub of the city.
+                    It’s in close proximity to young startups and Silicon Valley
+                    giants alike, making it an exciting and high-energy part of
+                    Pittsburgh.
+                </p>
+                <p>
+                  Lawrenceville is an interesting, burgeoning community just to
+                  the north of the Downtown Pittsburgh area. It’s where you’d
+                  go for the best Banh Mi (a Vietnamese Sandwich), Poke
+                  (deconstructed sushi bowls), Boba Tea (I think most people
+                  know what this is) and much, much more!
+                </p>
 
-        <div id="pnc_park" class="destination">
-            <p>
-                Sample text
-            </p>
+                <img src="banhmi.png" alt="Banh Mi & Tea" class="image">
+
+                <div id="map" style="width:550px;height:400px">
+                    <script>
+                    function lawrenceville() {
+                        var mapOptions = {
+                            mapTypeId: google.maps.MapTypeId.MAP,
+                            center: new google.maps.LatLng(40.478,-79.955),
+                            zoom: 14
+                        }
+                    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                    }
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?callback=lawrenceville">
+                    </script>
+                </div>
+            </div>
         </div>
+        <div id="pnc_park">
+            <div id="pnc_park_heading" class="title">
+                <h2> PNC Park </h2>
+            </div>
+            <div id="pnc_park" class="destination">
+                <p>
+                    PNC Park, unlike the team it houses, the Pittsburgh Pirates,
+                    is actually one of the city’s claims to fame.
+                </p>
+                <p>
+                    Widely regarded as one of the better stadiums in baseball,
+                    PNC Park opens up to a stunning view of the Pittsburgh
+                    Downtown cluster of buildings.
+                </p>
+                <p>
+                    I put this on a list for an out-of-towner because despite
+                    the fact that the Pirates most likely won’t be the team
+                    you’ll be rooting for, nothing will console you like
+                    watching them get brutally defeated against pretty much any
+                    team they play, all while enjoying a breathtaking view!
+                </p>
 
-        <div id="randyland_heading" class="title">
-            <h2> Randyland </h2>
+                <img src="pnc_park.jpg" alt="look at that view!" class="image">
+            </div>
         </div>
+        <div id="randyland">
+            <div id="randyland_heading" class="title">
+                <h2> Randyland </h2>
+            </div>
+            <div id="randyland_body" class="destination">
+                <p>
+                    Randyland might be my favorite place to recommend to
+                    out-of-towners. Although words can’t really describe this
+                    place, my assignment is to describe it, so I’m going to do
+                    my best.
+                </p>
+                <p>
+                    In 1995 Randy Gilson bought a building for $10,000 on a
+                    credit card in the then-impoverished North Side of
+                    Pittsburgh. His mission was simple–to bring people together
+                    with the city’s largest piece of public art, but he had a
+                    major obstacle–he didn’t have any money.
+                </p>
+                <p>
+                    His solution was to repurpose garbage that he found in his
+                    community as parts of his ‘exhibit’, the building he owned
+                    and lived in.
+                </p>
 
-        <div id="randyland_body" class="destination">
-            <p>
-                Sample text
-            </p>
+                <img src="randyland.png" alt="Randyland" class="image">
+
+                <p>
+                    Some quick facts about Randyland:
+                </p>
+                <ol id="randy_list" class="list">
+                    <li> Admissions are completely free! </li>
+                    <li> Randyland is open every day from 10AM-Dusk! </li>
+                    <li> Randy still lives in the studio on the first floor of
+                          Randyland </li>
+                </ol>
+                <p>
+                    I went here for the first time last summer, and absolutely
+                    loved it. It’s a colorful amalgamation of garbage repurposed
+                    by Randy’s imagination that brings joy to everybody who
+                    visits it.
+                </p>
+
+                <img src="randyland_2.jpg" src="Randyland Building" class="image">
+            </div>
         </div>
-
 
         <!--  JOIN EMAIL LIST FORM  -->
         <hr>
