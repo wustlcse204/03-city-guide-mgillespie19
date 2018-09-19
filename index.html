@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 
 <!--
-html
-  table
-  IMAGES [Height, width, image size correct]
-    Mount washington
-    lawrenceville
-    pnc park
-
-css
-Make some text on your page either italic, underlined, or all caps using CSS by targeting an ID or CLASS.
-Add some line height to the paragraphs on your page
-Change the alignment of some text- left, right, or justify.
 Change the background color of your form text inputs when they are in focus (i.e. when the user is typing a value)
 -->
 
@@ -42,29 +31,26 @@ Change the background color of your form text inputs when they are in focus (i.e
         </nav>
 
         <!--  Article heading & Mission Statement  -->
-        <div id="article_heading">
-            <h1> Max Gillespie's Pittsburgh Hitlist </h1>
-        </div>
-        <div id="website_welcome" class="container">
-            <div id="welcome-text">
-                <p id="welcome_line1">
-                    Hi! Welcome to my website about the best places to visit in
-                    Pittsburgh. It's great to have you here! I’m a lifelong Pittsburgh
-                    resident, and am fiercely in love with the city.
-                </p>
-                <p>
-                    While many people have heard of Pittsburgh, not many have been,
-                    and I think that’s a shame. While it’s not the largest city, it’s
-                    a charming mix of small-town and big city, the perfect pit stop on
-                    a road trip as you move from midwest into northeast or vice versa.
-                </p>
-                <p>
-                  I’ve spent countless hours exploring the city, and this is a my
-                  must-hit list: a non-comprehensive list of things that love to do
-                  while I’m home, and try to do as often as possible. Enjoy!
-                </p>
+
+        <div id="home_containter">
+            <div id="article_heading">
+                <h1> Max Gillespie's Pittsburgh Hitlist </h1>
             </div>
-            <img id="welcomeImage" src="PGH-Bridge.png" alt = "Welcome Background" class="image">
+            <div id="website_welcome">
+                <div id="welcome-text">
+                    <p id="welcome_line1">
+                        Hi! Welcome to my website about the best places to visit in
+                        Pittsburgh. It's great to have you here! I’m a lifelong Pittsburgh
+                        resident, and am fiercely in love with the city.
+                    </p>
+                    <p>
+                      I’ve spent countless hours exploring the city, and this is a my
+                      must-hit list: a non-comprehensive list of things that love to do
+                      while I’m home, and try to do as often as possible. Enjoy!
+                    </p>
+                </div>
+                <img id="welcomeImage" src="PGH-Bridge.png" alt = "Welcome Background" class="image">
+            </div>
         </div>
 
         <!-- LOCATIONS -->
@@ -114,15 +100,34 @@ Change the background color of your form text inputs when they are in focus (i.e
                 </p>
                 <p>
                   There are a variety of things to do at Mount Washington,
-                  including riding an incline up the bank, and a multitude of
-                  different restaurants and ice cream shops, but the main attraction
-                  is unequivocally the view yielded from one of the several viewing
+                  including riding an incline up the bank (hours included below
+                  image), in addition to a multitude of different restaurants
+                  and ice cream shops, but the main attraction is unequivocally
+                  the view yielded from one of the several viewing
                   decks. I didn’t really fall in love with Pittsburgh until the
                   first time I went to the top of Mount Washington in the late
                   afternoon with a friend, set up a hammock, and watched the sunset
-                  over the city as golden hour slipped into dusk, which slipped into
-                  evening.
+                  over the city as golden hour slipped into dusk, which slipped
+                  into evening.
                 </p>
+
+                <img src="mt_washington.jpg" alt="Mount Washington Incine" class="image">
+                <h2 id="incline_hours_title"> Incline Hours of Operation </h2>
+                <table id="incline_table">
+                    <tr>
+                        <th>Weekday</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Monday – Saturday</td>
+                        <td>5:30am – 12:30am</td>
+
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>7:00am – 12:30am</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div id="lawrenceville">
@@ -147,9 +152,9 @@ Change the background color of your form text inputs when they are in focus (i.e
 
                 <img src="banhmi.png" alt="Banh Mi & Tea" class="image">
 
-                <div id="map" style="width:550px;height:400px">
+                <div id="map" style="width:600px;height:400px">
                     <script>
-                    function lawrenceville() {
+                    function lawrenceville_map() {
                         var mapOptions = {
                             mapTypeId: google.maps.MapTypeId.MAP,
                             center: new google.maps.LatLng(40.478,-79.955),
@@ -158,7 +163,8 @@ Change the background color of your form text inputs when they are in focus (i.e
                     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
                     }
                     </script>
-                    <script src="https://maps.googleapis.com/maps/api/js?callback=lawrenceville">
+
+                    <script src="https://maps.googleapis.com/maps/api/js?callback=lawrenceville_map">
                     </script>
                 </div>
             </div>
@@ -236,9 +242,9 @@ Change the background color of your form text inputs when they are in focus (i.e
 
         <!--  JOIN EMAIL LIST FORM  -->
         <hr>
-        <div id="join_email_list" class="email_list">
-            <form method="post">
-                <input type="email">
+        <div id="email_list" class="email_list">
+            <form id="join_email_list" method="post">
+                <input type="email" class="email_input">
                     Join our email list and learn more about Pittsburgh!
                 </input>
             </form>

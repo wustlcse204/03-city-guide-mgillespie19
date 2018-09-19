@@ -1,31 +1,40 @@
 /* background color */
     body {
-        background-color: rgb(240, 240, 242);
-        margin-left: 160px;
+        background-color: rgb(239, 233, 220);
         font-family: sans-serif;
+        margin-top: 70px;
     }
 
 /* NAV BAR MODIFICATION */
     nav {
-     list-style-type: none;
-     left: 0px;
-     background-color: rgb(100,100,100);
-     float:left;
-     position: fixed;
+       list-style-type: none;
+       position: fixed;
+       top: 0px;
+       left: 0px;
+       background-color: rgb(100,100,100);
+       padding: 0;
+       overflow: hidden;
+       width: 100%;
     }
     nav a {
         display: block;
         color: white;
-        padding: 10px 10px;
+        padding: 10px 20px;
         text-decoration: none;
         text-align: center;
+        float: left;
     }
 
-/* Change the link color on hover */
+/* Change color on interaction */
     li a:hover {
         background-color: lightyellow;
         color: black;
     }
+    input.email_input:focus {
+      background-color: lightgrey;
+      color: white;
+    }
+
 
 /* TEXT & FONT MODIFICATION */
     p {
@@ -34,6 +43,7 @@
       font-size: 1.1em;
     }
     h1 {
+      margin-right: 10%;
       font-size: 2.7em;
     }
     h2 {
@@ -50,8 +60,9 @@
     #pnc_park {
       background-color: lightyellow;
     }
-    #website_welcome {
-      background-color: rgb(239, 233, 220);
+
+    #home_containter {
+      display:grid;
       text-align: right;
     }
     #website_welcome p {
@@ -59,20 +70,28 @@
     }
 
 /* IMAGE MODIFICATION  */
-.image {
-    width: 70%;
-}
-#welcomeImage {
-  width:100%;
-}
-#strip_district_body .image {
-  width:45%;
-}
+    #welcomeImage {
+      width:100%;
+    }
+    img {
+      width:75%;
+    }
+    #strip_district img {
+      width: 49%;
+    }
 
 /* OTHER MODIFICATION */
-
     #welcome_line1 {
       padding-bottom: 20px;
       font-weight: bold;
       font-style: oblique;
+      line-height: 25px;
+    }
+    #incline_table {
+      width: 50%;
+      border: 2px solid black;
+    }
+    #incline_hours_title {
+      font-size: 1.3em;
+      font-style: italic;
     }
