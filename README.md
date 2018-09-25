@@ -1,27 +1,18 @@
-# Assignment 04: City Guide
+This is now Homework 04: City Guide Styling
 
-For this assignment, you will be creating a simple website to act as a guide to your favorite city. Your website should highlight 4-5 of your favorite places in your favorite city. These can include restaurants, parks, museums, activities, or other features you enjoy about the city.
+Requirements:
+  Use HTML and/or CSS comments to unapply code from Assignment 3 not needed or changed for this assignment
 
-Your content should be well organized and include many of the HTML elements we have learned so far, such as headings, paragraphs, lists, and emphasized text.
-
-Do not worry about the style and appearance of your site as much- focus on content structure, and writing good effective content.
-
-## Assignment Objectives
-
-
-2. Follow the writing guidelines we learned in class to write clear, useful, and friendly content. You will be graded on the quality of your content!
-    * Write helpful descriptions of the places you are highlighting.
-
-INCLUDE A LIST
-
-UPDATE META TAGS FOR EVERY PAGE
-
-3. Include information that is relevant to your users in an appropriate format (i.e. hours of operation, menus, costs, directions).
-    * Include at least one table with appropriate content
-
-4. Include images of the city, as well as images of the places you're highlighting. (make sure you use height and width attributes to size them correctly)
-    * Use the pixlr editor to resize images to appropriate sizes.
-
-11. Use links to navigate your website, as well as to link to relevant external websites.
-
-12. Provide clear actions to your content.
+  Change the width and height of some elements, using pixels, percentages, or ems.
+  Add a tasteful border to at least one element.
+  Add some margin and padding to create better spacing on your webpage.
+  Make an element span only a percentage of the page (or containing element) width and center it on the page (or containing element)
+  Add a box shadow to at least one element
+  Add some appropriate styling to the list(s) on your City Guide webpage. You need at least 4 CSS rules targeting a list.
+  Add some appropriate styling to the table(s) on your City Guide webpage. You need at least 4 CSS rules targeting a table.
+  Add some appropriate styling to the form(s) on your City Guide webpage. You need at least 4 CSS rules targeting a form.
+  Create a page header bar that is affixed to the top of the page and includes your site title and some navigation links.
+  The header bar should be "fixed" so that when you scroll, it remains in position.
+  Make sure to account for the height of the header in the content on your page- you don't want the header to cover up the beginning of your page content!
+  Create a column layout for the content on your page.
+  The number of columns is up to you, but should be appropriate for the content of your page.
