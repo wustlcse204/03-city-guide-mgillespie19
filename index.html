@@ -28,6 +28,7 @@ Change the background color of your form text inputs when they are in focus (i.e
             <li><a href="#lawrenceville">Lawrenceville</a></li>
             <li><a href="#pnc_park">PNC Park</a></li>
             <li><a href="#randyland">Randyland</a></li>
+            <li id="menu_title"> Max's Pittsburgh Hitlist </li>
         </nav>
 
         <!--  Article heading & Mission Statement  -->
@@ -54,11 +55,11 @@ Change the background color of your form text inputs when they are in focus (i.e
         </div>
 
         <!-- LOCATIONS -->
-        <div id="strip_district">
+        <div id="strip_district"  class="column">
             <div id="strip_district_heading" class="title">
                 <h2> The Strip District </h2>
             </div>
-            <div id="strip_district_body" class="destination">
+            <div id="strip_district_text">
                 <p id="strip_p1">
                     No matter the time of week or year, the strip district is a
                     must-hit during your visit to Pittsburgh.
@@ -77,15 +78,17 @@ Change the background color of your form text inputs when they are in focus (i.e
                   you can get a truly one-of-a-kind sandwich piled high with fries
                   and coleslaw.
                 </p>
+            </div>
+            <div id="strip_district_images">
                 <img src="primanti.png" alt="Primanti's Sandwich" class="image">
                 <img src="pamelas.jpg" alt="Pamela's Pancakes" class="image">
             </div>
         </div>
-        <div id="mt_washington">
+        <div id="mt_washington" class="column">
             <div id="mt_washington_heading" class="title">
                 <h2> Mount Washington </h2>
             </div>
-            <div id="mt_washington_body" class="destination">
+            <div id="mt_washington_body">
                 <p>
                     Mount Washington is one of the stops on this list that makes
                     Pittsburgh truly unlike any other city.
@@ -110,8 +113,11 @@ Change the background color of your form text inputs when they are in focus (i.e
                   over the city as golden hour slipped into dusk, which slipped
                   into evening.
                 </p>
-
-                <img src="mt_washington.jpg" alt="Mount Washington Incine" class="image">
+            </div>
+            <div>
+                <img src="mt_washington.jpg" alt="Mount Washington Incine">
+            </div>
+            <div>
                 <h2 id="incline_hours_title"> Incline Hours of Operation </h2>
                 <table id="incline_table">
                     <tr>
@@ -130,7 +136,7 @@ Change the background color of your form text inputs when they are in focus (i.e
                 </table>
             </div>
         </div>
-        <div id="lawrenceville">
+        <div id="lawrenceville" class="column">
             <div id="lawrenceville_heading" class="title">
               <h2> Lawrenceville </h2>
             </div>
@@ -151,25 +157,9 @@ Change the background color of your form text inputs when they are in focus (i.e
                 </p>
 
                 <img src="banhmi.png" alt="Banh Mi & Tea" class="image">
-
-                <div id="map" style="width:600px;height:400px">
-                    <script>
-                    function lawrenceville_map() {
-                        var mapOptions = {
-                            mapTypeId: google.maps.MapTypeId.MAP,
-                            center: new google.maps.LatLng(40.478,-79.955),
-                            zoom: 14
-                        }
-                    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-                    }
-                    </script>
-
-                    <script src="https://maps.googleapis.com/maps/api/js?callback=lawrenceville_map">
-                    </script>
-                </div>
             </div>
         </div>
-        <div id="pnc_park">
+        <div id="pnc_park" class="column">
             <div id="pnc_park_heading" class="title">
                 <h2> PNC Park </h2>
             </div>
@@ -194,7 +184,7 @@ Change the background color of your form text inputs when they are in focus (i.e
                 <img src="pnc_park.jpg" alt="look at that view!" class="image">
             </div>
         </div>
-        <div id="randyland">
+        <div id="randyland" class="column">
             <div id="randyland_heading" class="title">
                 <h2> Randyland </h2>
             </div>
